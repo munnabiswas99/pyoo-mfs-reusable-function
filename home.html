@@ -20,7 +20,7 @@
             <div class="stats shadow">
               <div class="stat">
                 <div class="stat-title">Account Balance</div>
-                <div class="stat-value">9400</div>
+                <div id="account-balance" class="stat-value">9400</div>
               </div>
             </div>
             <div class="divider"></div>
@@ -37,7 +37,7 @@
                   <label class="label">
                     <span class="label-text">Amount</span>
                   </label>
-                  <input
+                  <input id="add-money-input"
                     type="number"
                     placeholder="amount"
                     class="input input-bordered"
@@ -48,7 +48,7 @@
                   <label class="label">
                     <span class="label-text">Pin number</span>
                   </label>
-                  <input
+                  <input id="pin-input"
                     type="password"
                     placeholder="pin"
                     class="input input-bordered"
@@ -56,7 +56,7 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add money</button>
+                  <button id="add-money-btn" class="btn btn-primary">Add money</button>
                 </div>
               </form>
             </div>
@@ -98,6 +98,8 @@
         </div>
       </div>
     </main>
+    <script src="JS/utlities.js"></script>
+    <script src="JS/addMoney.js"></script>
     <script src="JS/login.js"></script>
     <script src="JS/form.js"></script>
   </body>
