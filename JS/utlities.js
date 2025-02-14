@@ -14,3 +14,12 @@ function textFieldValue(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 };
+
+// Feature hide unhide
+function showFeature(id){
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('transaction-history').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
