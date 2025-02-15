@@ -6,6 +6,13 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
 
     if(pinNumber === 1234){
         const accountBalance = textFieldValue('account-balance');
+
+        //Insufficient Balane cheek
+        if(accountBalance<cashOutAmount){
+            alert('Insufficient Balance')
+            return;
+        }
+
         const newBalance = accountBalance - cashOutAmount;
         document.getElementById('account-balance').innerText = newBalance;
 
